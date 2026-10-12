@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "秋招投递记录",
+  "version": "1.0.0",
+  "description": "独立 Chrome 插件：本机保存投递记录、导入Excel、采集岗位JD、按网站监测提交动作。",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "unlimitedStorage"
+  ],
+  "optional_host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "记录当前岗位"
+  }
+}
